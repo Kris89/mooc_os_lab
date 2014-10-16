@@ -1,0 +1,15 @@
+Contributor: 尹治宏 (yinzhihong12@msn.com)
+Time: 2014.10.7
+
+新增功能：用键盘实现用户模式内核模式切换
+键盘输入3时切换到用户模式
+键盘输入0时切换到内核模式
+
+经过调试，发现键盘硬件中断和软件中断不同，不需要使用临时栈。
+另外寄存器的值要在中断完成后tranentry.S里面iret结束的时候才写回。
+所以不能用lab1_print_cur_status()来显示，建议用print_trapframe(tf)。
+
+主要修改在trap.c中
+
+
+
