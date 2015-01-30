@@ -1,3 +1,7 @@
+# 注意
+本处代码停止更新，已经合并到　https://github.com/chyyuu/ucore_lab
+以后的更新将放在 https://github.com/chyyuu/ucore_lab
+
 # 介绍(2014)
 
 ucore OS是用于清华大学计算机系本科操作系统课程的OS教学试验内容。
